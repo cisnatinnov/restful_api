@@ -1,0 +1,36 @@
+[{
+  "_id": {
+    "$oid": "6041adf83b794a11e8d24610"
+  },
+  "roles": [
+    {
+      "$oid": "6040d62bd0f3a92fb4e560f2"
+    },
+    {
+      "$oid": "6040d62bd0f3a92fb4e560f3"
+    },
+    {
+      "$oid": "6040d62bd0f3a92fb4e560f4"
+    }
+  ],
+  "username": "cisnatinnov",
+  "email": "cisnatinnov@gmail.com",
+  "password": "$2a$08$F9ZzHzQqZnEH6dkfSEUCZuxbCK/dpgMnaqxJXJYphmvGEP/bvmu8W",
+  "__v": 1
+},{
+  "_id": {
+    "$oid": "60442f18d6156c2a64ca09c5"
+  },
+  "roles": [
+    {
+      "$oid": "6040d62bd0f3a92fb4e560f2"
+    },
+    {
+      "$oid": "6040d62bd0f3a92fb4e560f3"
+    }
+  ],
+  "username": "diki",
+  "email": "diki@gmail.com",
+  "password": "$2a$08$iIibHpEd0x7FtX/raE4Dv.vKpk5WXQ5pxkMg85poNfS6M6SRqD4AK",
+  "__v": 1
+}]
