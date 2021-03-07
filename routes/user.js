@@ -18,7 +18,7 @@ app.use(function(req, res, next) {
 	next();
 });
 
-app.get('/', [ authJwt.verifyToken ], (req, res) => {
+app.get('/', [ authJwt.verifyToken, authJwt.isAdmin ], (req, res) => {
 	User.find({})
 	.populate("roles", "-__v")
 	.exec((err, result) => {
