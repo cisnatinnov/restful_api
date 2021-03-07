@@ -78,25 +78,25 @@ app.post('/create',
 
 		if (req.body.roles) {
 			Role.find(
-			{
-				name: { $in: req.body.roles }
-			},
-			(err, roles) => {
-				if (err) {
-					response.error(err, res);
-					return;
-				}
+				{
+					name: { $in: req.body.roles }
+				},
+				(err, roles) => {
+					if (err) {
+						response.error(err, res);
+						return;
+					}
 
-				user.roles = roles.map(role => role._id);
-				user.save(err => {
-				if (err) {
-					response.error(err, res);
-					return;
-				}
+					user.roles = roles.map(role => role._id);
+					user.save(err => {
+					if (err) {
+						response.error(err, res);
+						return;
+					}
 
-				response.success(user, "User inserted", res);
-				});
-			}
+					response.success(user, "User inserted", res);
+					});
+				}
 			);
 		} else {
 			Role.findOne({ name: "user" }, (err, role) => {
@@ -118,7 +118,6 @@ app.post('/create',
 		}
 	});
 })
-
 
 app.get('/edit/:id',
 [ authJwt.verifyToken, authJwt.isAdmin, authJwt.isUser ],

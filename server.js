@@ -49,6 +49,6 @@ user = require('./routes/user');
 app.use('/api/v1/auth', auth);
 app.use('/api/v1/user', user);
 
-app.listen(port, () => {
+app.listen(port, '0.0.0.0', () => {
 	console.log('Server running at port'+port+': http://127.0.0.1:'+port);
 });
