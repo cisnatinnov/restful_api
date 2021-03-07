@@ -13,3 +13,4 @@ Authentification
     "username": "diki",
     "password": "132435"
 }
+3. Database bezkoder_db
