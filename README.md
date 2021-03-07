@@ -5,11 +5,11 @@
 3. run npm start to start the app
 
 Authentification
-admin = {
+1. admin = {
     "username": "cisnatinnov",
     "password": "132435"
 }
-user = {
+2. user = {
     "username": "diki",
     "password": "132435"
 }
