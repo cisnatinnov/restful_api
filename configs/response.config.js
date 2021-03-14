@@ -4,7 +4,7 @@ const success = (data, message, res) => {
 		data: data,
 		message: message,
 	}
-	res.status(200).send(obj);
+	res.status(200).json(obj);
 }
 //response deleted
 const deleted = (data, message, res) => {
@@ -12,21 +12,21 @@ const deleted = (data, message, res) => {
 		data: data,
 		message: message,
 	}
-	res.status(204).send(obj);
+	res.status(204).json(obj);
 }
 //response error
 const error = (message, res) => {
 	let obj = {
 		message: message,
 	}
-	res.status(500).send(obj);
+	res.status(500).json(obj);
 }
 //response not found
 const notFound = (message, res) => {
 	let obj = {
 		message: message,
 	}
-	res.status(404).send(obj);
+	res.status(404).json(obj);
 }
 //response unAuth
 const unAuth = (message, res) => {
@@ -34,7 +34,7 @@ const unAuth = (message, res) => {
 		accessToken: null,
 		message: message,
 	}
-	res.status(403).send(obj);
+	res.status(403).json(obj);
 }
 //response invalid
 const invalid = (message, res) => {
@@ -42,14 +42,14 @@ const invalid = (message, res) => {
 		accessToken: null,
 		message: message,
 	}
-	res.status(401).send(obj);
+	res.status(401).json(obj);
 }
 //response inused
 const inused = (message, res) => {
 	let obj = {
 		message: message,
 	}
-	res.status(400).send(obj);
+	res.status(400).json(obj);
 }
 
 module.exports = {

@@ -6,6 +6,7 @@ const express = require('express'),
 
 const configs = require("./configs");
 const dbConfig = configs.db;
+const response = configs.response;
 const db = require("./models");
 
 db.mongoose
@@ -39,8 +40,16 @@ app.use(methodOverride((req, res) => {
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.get("/", (req, res) => {
-  res.json({ message: "Welcome to restful api application." });
+app.use(function(req, res, next) {
+	res.header(
+		"Access-Control-Allow-Headers",
+		"x-access-token, Origin, Content-Type, Accept"
+	);
+	next();
+});
+
+app.get("/api", (req, res) => {
+  response.success({username: "",password:""}, "Welcome to restful api application.", res);
 });
 
 var { auth, user, task } = require('./routes');
@@ -50,5 +59,5 @@ app.use('/api/v1/user', user);
 app.use('/api/v1/task', task);
 
 app.listen(port, '0.0.0.0', () => {
-	console.log('Server running at port'+port+': http://127.0.0.1:'+port);
+	console.log('Server running at port'+port+': http://127.0.0.1:'+port+'/api');
 });
