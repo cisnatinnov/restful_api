@@ -1,9 +1,9 @@
-const auth = require('./auth');
+const home = require('./home');
 const user = require('./user');
 const task = require('./task');
 
 module.exports = {
-	auth,
+	home,
 	user,
 	task
 }

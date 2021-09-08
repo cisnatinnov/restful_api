@@ -1,9 +1,9 @@
 const express = require('express');
 const _ = require('lodash');
-const models = require('../models');
-const { response } = require('../configs');
+const models = require('../../models');
+const { response } = require('../../configs');
 const app = express();
-const { authJwt } = require('../middlewares');
+const { authJwt } = require('../../middlewares');
 
 const Task = models.task;
 
