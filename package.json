@@ -1,7 +1,7 @@
 {
   "name": "restful_api-1",
   "version": "1.0.0",
-  "description": "",
+  "description": "restful api node js",
   "main": "server.js",
   "scripts": {
     "test": "npm start"
