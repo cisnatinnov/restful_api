@@ -22,7 +22,7 @@
     "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.21",
     "method-override": "^3.0.0",
-    "mongoose": "^5.9.1"
+    "mongoose": "^5.9.x"
   },
   "bugs": {
     "url": "https://github.com/cisnatinnov/restful_api/issues"
