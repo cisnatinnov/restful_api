@@ -19,7 +19,7 @@
     "ejs": "^3.1.6",
     "express": "^4.17.1",
     "express-session": "^1.17.2",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^8.5.x",
     "lodash": "^4.17.x",
     "method-override": "^3.0.x",
     "mongoose": "^5.9.x"
