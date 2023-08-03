@@ -4,7 +4,7 @@
   "description": "Nodejs restful api",
   "main": "server.js",
   "scripts": {
-    "test": "npm start"
+    "start": "npm start"
   },
   "repository": {
     "type": "git",
