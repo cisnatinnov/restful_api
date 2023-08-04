@@ -21,7 +21,7 @@
     "express-session": "^1.17.x",
     "jsonwebtoken": "^8.5.x",
     "lodash": "^4.17.x",
-    "method-override": "^3.0.x",
+    "method-override": "^3.0.1",
     "mongoose": "^5.9.1"
   },
   "bugs": {
